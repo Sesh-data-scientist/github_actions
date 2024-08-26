@@ -1,0 +1,22 @@
+name: My github workflow
+on:
+  push:
+    bracnhes:
+      - main
+
+env:
+  PROJECT_NAME: githubactions-demo
+  COURSE: LLMOPS BY 
+
+jobs:
+  myexamplejob:
+    runs-on: ubuntu-latest
+    steps:
+      - run echo "checkout the repo"
+      - name: checkout repo
+        uses: actions/checkout@v4
+
+
+
+
+
